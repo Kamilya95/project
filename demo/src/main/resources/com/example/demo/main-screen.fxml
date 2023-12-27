@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="rootPane" prefHeight="395.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MainController">
+   <children>
+      <TableView fx:id="tableUser" layoutY="78.0" prefHeight="323.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="73.33331298828125" text="id" />
+          <TableColumn fx:id="columnLogin" prefWidth="115.33334350585938" text="login" />
+            <TableColumn fx:id="columnIdPassword" prefWidth="162.6666259765625" text="password" />
+            <TableColumn fx:id="columnIdRole" minWidth="0.6666259765625" prefWidth="128.0" text="role" />
+            <TableColumn fx:id="columnIdStatus" minWidth="0.0" prefWidth="118.6666259765625" text="status" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="update" fitHeight="39.0" fitWidth="56.0" layoutX="534.0" layoutY="14.0" onMouseClicked="#backScreen" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@arrow_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="53.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#updateScreen" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@refresh.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
